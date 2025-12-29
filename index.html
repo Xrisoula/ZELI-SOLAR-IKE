@@ -18,6 +18,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   background:var(--bg);
   color:#111;
+  line-height:1.55; /* ⬅️ γενικό line-height */
 }
 
 /* HEADER */
@@ -32,12 +33,14 @@ body{
   margin:0;
   font-size:34px;
   letter-spacing:1px;
+  line-height:1.3;
 }
 
 .header p{
   margin-top:12px;
   font-size:18px;
   opacity:.9;
+  line-height:1.4;
 }
 
 /* LAYOUT */
@@ -62,6 +65,7 @@ body{
   font-weight:700;
   color:var(--blue);
   margin-bottom:10px;
+  line-height:1.4;
 }
 
 .section-line{
@@ -80,13 +84,22 @@ body{
 
 .item{
   display:flex;
-  gap:6px;
-  margin:7px 0;
+  gap:8px;
+  margin:8px 0;
+  line-height:1.6; /* ⬅️ πιο άνετη ανάγνωση */
 }
 
 .label{
   font-weight:700;
   min-width:190px;
+}
+
+/* INFO TEXT */
+.info-text{
+  margin-top:18px;
+  font-size:14.5px;
+  color:#333;
+  line-height:1.7;
 }
 
 @media(max-width:900px){
@@ -158,6 +171,12 @@ body{
 
     <div class="item"><div class="label">Email:</div>anageosmail@gmail.com</div>
     <div class="item"><div class="label">Τηλέφωνο:</div>6945756254</div>
+
+    <div class="info-text">
+      Για οποιαδήποτε πληροφορία σχετικά με την εταιρεία, παρακαλούμε επικοινωνήστε
+      με τα επίσημα στοιχεία επικοινωνίας που αναγράφονται στα φορολογικά έγγραφα
+      και στο Γ.Ε.ΜΗ.
+    </div>
   </div>
 
 </div>
