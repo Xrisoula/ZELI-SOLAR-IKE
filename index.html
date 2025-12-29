@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ZELI SOLAR Ι.Κ.Ε. – Στοιχεία Εταιρείας</title>
+<title>ZELI SOLAR Ι.Κ.Ε.</title>
 
 <style>
 :root{
-  --blue:#0b3f6f;
-  --bg:#f3f4f6;
+  --green:#1f7a4f;   /* 🌱 φωτοβολταϊκό πράσινο */
+  --bg:#f2f3f5;
 }
 
 *{box-sizing:border-box}
@@ -18,92 +18,105 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   background:var(--bg);
   color:#111;
-  line-height:1.55; /* ⬅️ γενικό line-height */
+  line-height:1.65;
 }
 
 /* HEADER */
 .header{
-  background:var(--blue);
+  background:var(--green);
   color:#fff;
-  padding:55px 20px;
+  padding:48px 20px;
   text-align:center;
 }
 
 .header h1{
   margin:0;
-  font-size:34px;
-  letter-spacing:1px;
-  line-height:1.3;
+  font-size:26px;
+  letter-spacing:.5px;
 }
 
 .header p{
-  margin-top:12px;
-  font-size:18px;
-  opacity:.9;
-  line-height:1.4;
+  margin-top:10px;
+  font-size:15px;
+  opacity:.95;
 }
 
 /* LAYOUT */
 .container{
   max-width:1100px;
-  margin:40px auto;
-  padding:0 20px;
+  margin:30px auto;
+  padding:0 15px;
 }
 
 /* CARD */
 .card{
   background:#fff;
-  border-radius:10px;
-  padding:30px 35px;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
-  margin-bottom:35px;
+  border-radius:14px;
+  padding:22px 20px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  margin-bottom:22px;
 }
 
-/* SECTION TITLE */
+/* TITLES */
 .section-title{
-  font-size:24px;
+  font-size:20px;
   font-weight:700;
-  color:var(--blue);
-  margin-bottom:10px;
-  line-height:1.4;
+  color:var(--green);
+  margin-bottom:6px;
 }
 
 .section-line{
   height:2px;
-  background:var(--blue);
-  margin-bottom:25px;
+  background:var(--green);
+  margin-bottom:18px;
 }
 
-/* CONTENT */
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  column-gap:80px;
-  row-gap:10px;
-}
-
+/* ITEMS */
 .item{
-  display:flex;
-  gap:8px;
-  margin:8px 0;
-  line-height:1.6; /* ⬅️ πιο άνετη ανάγνωση */
+  margin-bottom:12px;
 }
 
 .label{
   font-weight:700;
-  min-width:190px;
+  display:block;
+  margin-bottom:2px;
+}
+
+/* LIST */
+ul{
+  margin:0;
+  padding-left:18px;
+}
+
+li{
+  margin-bottom:8px;
 }
 
 /* INFO TEXT */
 .info-text{
-  margin-top:18px;
-  font-size:14.5px;
-  color:#333;
-  line-height:1.7;
+  font-size:14px;
+  margin-top:12px;
 }
 
-@media(max-width:900px){
-  .grid{grid-template-columns:1fr}
+/* FOOTER */
+.footer{
+  background:var(--green);
+  color:#fff;
+  padding:22px 16px;
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* DESKTOP */
+@media(min-width:900px){
+  .header h1{font-size:32px}
+  .header p{font-size:18px}
+
+  .grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+  }
 }
 </style>
 </head>
@@ -125,32 +138,34 @@ body{
 
     <div class="grid">
       <div>
-        <div class="item"><div class="label">Επωνυμία:</div>ZELI SOLAR Ι.Κ.Ε.</div>
-        <div class="item"><div class="label">ΔΟΥ:</div>ΚΕΦΟΔΕ ΑΤΤΙΚΗΣ</div>
-        <div class="item"><div class="label">Ημερομηνία Έναρξης:</div>11/04/2019</div>
-        <div class="item"><div class="label">Κατάσταση:</div>Ενεργή</div>
-        <div class="item"><div class="label">Έδρα:</div>Λεωφόρος Δεκελείας 37, Νέα Χαλκηδόνα</div>
-        <div class="item"><div class="label">Υπαγωγή ΦΠΑ:</div>Ναι</div>
+        <div class="item"><span class="label">Επωνυμία</span>ZELI SOLAR Ι.Κ.Ε.</div>
+        <div class="item"><span class="label">ΔΟΥ</span>ΚΕΦΟΔΕ ΑΤΤΙΚΗΣ</div>
+        <div class="item"><span class="label">Ημερομηνία Έναρξης</span>11/04/2019</div>
+        <div class="item"><span class="label">Κατάσταση</span>Ενεργή</div>
+        <div class="item"><span class="label">Έδρα</span>Λεωφόρος Δεκελείας 37, Νέα Χαλκηδόνα</div>
+        <div class="item"><span class="label">Υπαγωγή ΦΠΑ</span>Ναι</div>
       </div>
 
       <div>
-        <div class="item"><div class="label">ΑΦΜ:</div>801143293</div>
-        <div class="item"><div class="label">Αρ. ΓΕΜΗ:</div>150097802000</div>
-        <div class="item"><div class="label">Νομική Μορφή:</div>Ιδιωτική Κεφαλαιουχική Εταιρεία</div>
-        <div class="item"><div class="label">Κεφάλαιο:</div>10.000,00 €</div>
-        <div class="item"><div class="label">Κατηγορία Βιβλίων:</div>Γ’ (Διπλογραφικά)</div>
-        <div class="item"><div class="label">Λήξη Διάρκειας:</div>11/04/2049</div>
+        <div class="item"><span class="label">ΑΦΜ</span>801143293</div>
+        <div class="item"><span class="label">Αρ. ΓΕΜΗ</span>150097802000</div>
+        <div class="item"><span class="label">Νομική Μορφή</span>Ιδιωτική Κεφαλαιουχική Εταιρεία</div>
+        <div class="item"><span class="label">Κεφάλαιο</span>10.000,00 €</div>
+        <div class="item"><span class="label">Κατηγορία Βιβλίων</span>Γ’ (Διπλογραφικά)</div>
+        <div class="item"><span class="label">Λήξη Διάρκειας</span>11/04/2049</div>
       </div>
     </div>
   </div>
 
-  <!-- ΕΤΑΙΡΟΙ -->
+  <!-- ΜΕΛΗ / ΕΤΑΙΡΟΙ -->
   <div class="card">
-    <div class="section-title">Εταίροι</div>
+    <div class="section-title">Μέλη / Εταίροι</div>
     <div class="section-line"></div>
 
-    <div class="item"><div class="label">ΑΥΓΕΡΗΣ ΔΗΜΗΤΡΙΟΣ:</div>50%</div>
-    <div class="item"><div class="label">ΑΝΑΓΝΩΣΤΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ:</div>50%</div>
+    <ul>
+      <li><strong>ΑΥΓΕΡΗΣ ΔΗΜΗΤΡΙΟΣ</strong> — 50%</li>
+      <li><strong>ΑΝΑΓΝΩΣΤΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ</strong> — 50%</li>
+    </ul>
   </div>
 
   <!-- ΔΙΑΧΕΙΡΙΣΤΗΣ -->
@@ -159,7 +174,7 @@ body{
     <div class="section-line"></div>
 
     <div class="item">
-      <div class="label">Ονοματεπώνυμο:</div>
+      <span class="label">Ονοματεπώνυμο</span>
       ΑΝΑΓΝΩΣΤΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ
     </div>
   </div>
@@ -169,8 +184,8 @@ body{
     <div class="section-title">Επικοινωνία</div>
     <div class="section-line"></div>
 
-    <div class="item"><div class="label">Email:</div>anageosmail@gmail.com</div>
-    <div class="item"><div class="label">Τηλέφωνο:</div>6945756254</div>
+    <div class="item"><span class="label">Email</span>anageosmail@gmail.com</div>
+    <div class="item"><span class="label">Τηλέφωνο</span>6945756254</div>
 
     <div class="info-text">
       Για οποιαδήποτε πληροφορία σχετικά με την εταιρεία, παρακαλούμε επικοινωνήστε
@@ -179,6 +194,13 @@ body{
     </div>
   </div>
 
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © ZELI SOLAR Ι.Κ.Ε. — Τα παραπάνω στοιχεία προέρχονται από επίσημες πηγές.
+  <br>
+  ΑΦΜ: 801143293 · ΓΕΜΗ: 150097802000
 </div>
 
 </body>
